@@ -1,6 +1,8 @@
 /*global module, require, cc*/
 
-var uiNodeManager = require("ui_node_manager");
+var uiSceneManager = require("ui_scene_manager");
+var prefabManager = require("prefab_manager");
+var game = require("game");
 var log = require("log");
 
 cc.Class({
@@ -13,7 +15,10 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         "use strict";
-        uiNodeManager.gameInit(this.node);
-        log.showLog("finish");
+        var mainRootNode = this.node;
+        prefabManager.initPrefab(function () {
+            uiSceneManager.gameManagerInit(mainRootNode);
+            game.gameInit();
+        });
     }
 });

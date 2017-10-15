@@ -23,7 +23,7 @@ outModule.NN = "NN";
  * 初始化游戏框架
  * @param mainNode 主节点
  */
-outModule.gameInit = function (mainNode) {
+outModule.gameManagerInit = function (mainNode) {
     "use strict";
     var backgroundNode,
         UINode,

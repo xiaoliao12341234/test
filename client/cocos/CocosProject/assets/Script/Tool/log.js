@@ -12,7 +12,7 @@ var outModule = {};
 outModule.showLog = function (object) {
     "use strict";
     var key;
-    if (!object) {
+    if (!object && object !== 0) {
         cc.log(globalMsg.msg.PROJECT_NAME + " log : " + "object is null");
         return;
     }

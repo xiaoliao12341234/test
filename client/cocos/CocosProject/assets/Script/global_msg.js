@@ -7,7 +7,10 @@
 var outModule = {};
 
 outModule.msg = {
-    "PROJECT_NAME" : "back_project"
+    "PROJECT_NAME" : "back_project",
+    "PREFAB_INIT_ARRAY" : [
+        "prefab/test"
+    ]
 };
 
 module.exports = outModule;
