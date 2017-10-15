@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2017-10-07T15:27:59Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8010</WindowHeight>
+  <WindowWidth>14805</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>105</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <NumberFormat/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="book">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="23" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="123.75" ss:Span="2"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">唯一ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">名字</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">介绍</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">main_id</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">introduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000000</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000001</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_5</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Boolean">0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000008</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_9</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">11.12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000011</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="s62"><Data ss:Type="String">书籍_12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_13</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_16</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_17</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_17</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_18</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_18</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_19</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_19</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_20</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_20</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_21</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">书籍_21</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="equipment">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="23" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="123.75" ss:Span="2"/>
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="162"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">唯一ID</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">名字</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">介绍</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">main_id</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">name</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">introduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100000</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100001</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100002</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100003</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_4</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100004</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_5</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100005</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_6</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100006</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100007</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_8</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100008</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_9</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100009</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_10</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100010</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_11</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100011</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_12</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100012</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_13</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_13</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100013</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_14</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100014</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_15</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100015</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_16</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_16</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100016</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_17</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_17</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100017</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_18</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_18</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100018</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_19</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_19</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1100019</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_20</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_20</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1000020</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_21</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">装备_21</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>18</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
