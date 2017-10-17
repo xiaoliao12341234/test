@@ -40,6 +40,7 @@ class baseNode {
         }
         //需要从头开始清理
         //清除一个以后this._node.childrenCount就会改变了
+        //下次小心
         if (index >= 0 && index < this._node.childrenCount) {
             let i;
             for (i = this._node.childrenCount - 1; i >= index; i--) {
