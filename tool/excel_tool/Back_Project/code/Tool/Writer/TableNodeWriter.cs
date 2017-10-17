@@ -12,32 +12,31 @@ namespace Back_Project.code.Tool.Writer
         {
             string returnStr;
             RowNodeWriter rowNodeWrite = new RowNodeWriter();
-            returnStr = "var outModule = {};\r\n";
-            returnStr = returnStr + "outModule.object = {" + "\r\n";
+            returnStr = "{\r\n";
+            returnStr = returnStr + "    " + '"' + "object" + '"' + " : {" + "\r\n";
             for (int i = 0; i < tableNode.getRowNodeList().Count; i++)
             {
-                returnStr = returnStr + rowNodeWrite.ObjectString(tableNode.getRowNodeList()[i]) +
+                returnStr = returnStr + "    " + rowNodeWrite.ObjectString(tableNode.getRowNodeList()[i]) +
+                    ((i == tableNode.getRowNodeList().Count - 1) ? "" : ",");
+                returnStr = returnStr + "    " + "\r\n";
+            }
+            returnStr = returnStr + "    " + "},";
+
+            returnStr = returnStr + "\r\n";
+            returnStr = returnStr + "\r\n";
+
+            returnStr = returnStr + "    " + '"' + "array" + '"' + " : [" + "\r\n";
+            for (int i = 0; i < tableNode.getRowNodeList().Count; i++)
+            {
+                returnStr = returnStr + "    " + rowNodeWrite.ArrayString(tableNode.getRowNodeList()[i]) +
                     ((i == tableNode.getRowNodeList().Count - 1) ? "" : ",");
                 returnStr = returnStr + "\r\n";
             }
-            returnStr = returnStr + "};";
+            returnStr = returnStr + "    " + "]";
 
             returnStr = returnStr + "\r\n";
-            returnStr = returnStr + "\r\n";
 
-            returnStr = returnStr + "outModule.array = [" + "\r\n";
-            for (int i = 0; i < tableNode.getRowNodeList().Count; i++)
-            {
-                returnStr = returnStr + rowNodeWrite.ArrayString(tableNode.getRowNodeList()[i]) +
-                    ((i == tableNode.getRowNodeList().Count - 1) ? "" : ",");
-                returnStr = returnStr + "\r\n";
-            }
-            returnStr = returnStr + "];";
-
-            returnStr = returnStr + "\r\n";
-            returnStr = returnStr + "\r\n";
-
-            returnStr = returnStr + "module.exports = outModule;";
+            returnStr = returnStr + "}";
             return returnStr;
         }
     }

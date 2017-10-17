@@ -1,9 +1,9 @@
-/*global module, require, cc*/
+/*global module, require, cc, client */
 
-var uiSceneManager = require("ui_scene_manager");
-var prefabManager = require("prefab_manager");
-var game = require("game");
-var log = require("log");
+require("Global");
+var excelDataManager = require("ExcelDataManager");
+var UIPoolManager = require("UIPoolManager");
+var UISceneManager = require("UISceneManager");
 
 cc.Class({
     extends: cc.Component,
@@ -15,10 +15,15 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         "use strict";
-        var mainRootNode = this.node;
-        prefabManager.initPrefab(function () {
-            uiSceneManager.gameManagerInit(mainRootNode);
-            game.gameInit();
+        excelDataManager.init(() => {
+            UIPoolManager.init(() => {
+                //初始化成功，可以进入场景
+                client.excelDataManager = excelDataManager;
+                client.UIPoolManager = UIPoolManager;
+                client.UISceneManager = UISceneManager;
+                //初始化
+                client.UISceneManager.init(this.node);
+            });
         });
     }
 });

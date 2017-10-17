@@ -12,15 +12,15 @@ namespace Back_Project.code.Tool.Writer
         {
             if (cellNode.getType() == GlobalData.DATA_TYPE_DOUBLE)
             {
-                return "    " + cellNode.getKey() + " : " + cellNode.getNum();
+                return "    " + "    " + '"' + cellNode.getKey() + '"' + " : " + cellNode.getNum();
             }
             if (cellNode.getType() == GlobalData.DATA_TYPE_BOOLEAN)
             {
-                return "    " + cellNode.getKey() + " : " + (cellNode.getBoolData() ? "true" : "false");
+                return "    " + "    " + '"' + cellNode.getKey() + '"' + " : " + (cellNode.getBoolData() ? "true" : "false");
             }
             if (cellNode.getType() == GlobalData.DATA_TYPE_STRING)
             {
-                return "    " + cellNode.getKey() + " : " + '"'  + cellNode.getStr() + '"';
+                return "    " + "    " + '"' + cellNode.getKey() + '"' + " : " + '"'  + cellNode.getStr() + '"';
             }
             return "";
         }

@@ -13,7 +13,7 @@ namespace Back_Project.code.Tool.Writer
             string returnStr;
             int count = 0;
             Writer.CellNodeWriter cellNodeWrite = new CellNodeWriter();
-            returnStr = "    " + dataRowNode.getCellNodeList()[0].getNum() + " : {";
+            returnStr = "    " + '"' + dataRowNode.getCellNodeList()[0].getNum() + '"' + " : {";
             for(int i = 1; i < dataRowNode.getCellNodeList().Count; i++)
             {
                 if (dataRowNode.getCellNodeList()[i] == null)
@@ -24,7 +24,7 @@ namespace Back_Project.code.Tool.Writer
                     +  "    " + cellNodeWrite.getString(dataRowNode.getCellNodeList()[i]);
                 count++;
             }
-            returnStr = returnStr + "\r\n    " + "}";
+            returnStr = returnStr + "\r\n    " + "    " + "}";
             return returnStr;
         }
 
@@ -44,7 +44,7 @@ namespace Back_Project.code.Tool.Writer
                     + "    " + cellNodeWrite.getString(dataRowNode.getCellNodeList()[i]);
                 count++;
             }
-            returnStr = returnStr + "\r\n    " + "}";
+            returnStr = returnStr + "\r\n    " + "    " + "}";
             return returnStr;
         }
     }

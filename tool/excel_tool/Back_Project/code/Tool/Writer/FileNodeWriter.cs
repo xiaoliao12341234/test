@@ -15,7 +15,7 @@ namespace Back_Project.code.Tool.Writer
             for(int i = 0; i < fileNode.getTableNodeList().Count; i++)
             {
                 string sheetName = fileNode.getTableNodeList()[i].getSheetName();
-                string xmlFileName = excelDirFullPath + @"\_table_" + fileName + "_" + sheetName + ".js";
+                string xmlFileName = excelDirFullPath + @"\_table_" + fileName + "_" + sheetName + ".json";
                 FileStream fs = new FileStream(xmlFileName, FileMode.OpenOrCreate);
                 StreamWriter sw = new StreamWriter(fs);
                 //开始写入

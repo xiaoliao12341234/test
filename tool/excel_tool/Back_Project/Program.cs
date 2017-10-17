@@ -14,8 +14,8 @@ namespace Back_Project
             //先清除原有的配置数据
             string workDir = Environment.CurrentDirectory;
             DirectoryInfo workDirInfo = new DirectoryInfo(workDir);
-            string excelDataDirPath = workDirInfo.Parent.Parent.Parent.Parent.Parent.FullName + 
-                @"\client\cocos\CocosProject\assets\Script\Excel_Data";
+            string excelDataDirPath = workDirInfo.Parent.Parent.Parent.Parent.Parent.FullName +
+                @"\client\cocos\CocosProject\assets\resources\Excel_Data";
             DirectoryInfo workExcelDirInfo = new DirectoryInfo(workDirInfo.Parent.Parent.Parent.Parent.Parent.FullName + @"\excel");
             if (Directory.Exists(excelDataDirPath))
             {
