@@ -105,7 +105,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "test",
+    "_name": "test_3",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -147,7 +147,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 60,
       "y": 0
     },
     "_skewX": 0,
@@ -189,7 +189,7 @@
       "__id__": 3
     },
     "asset": {
-      "__uuid__": "5ab89136-6b41-4ec4-920d-a94cdf6a93ad"
+      "__uuid__": "e4494d80-44f9-4c6a-8f66-7f8753b8c803"
     },
     "fileId": "2ad12I1FixITbhLzaXOD20R",
     "sync": false

@@ -19,7 +19,7 @@ class baseNode {
      * 这边不提供由ZOrder来确定排序的功能，需要在添加逻辑中助理
      */
     addNode (node, tag) {
-        this._node.addChild(node,1 , tag);
+        this._node.addChild(node, 1, tag);
     }
 
     /**
@@ -40,11 +40,11 @@ class baseNode {
         }
         if (index >= 0 && index < this._node.childrenCount) {
             let i;
-            for (i = index; i < this._node.childrenCount; i++) {
+            for (i = this._node.childrenCount - 1; i >= index; i--) {
                 this._node.removeChild(this._node.children[i], false);
             }
-            this.addNode(node, tag);
         }
+        this.addNode(node, tag);
     }
 
     /**

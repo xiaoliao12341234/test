@@ -13,11 +13,17 @@ var local = {};
 //存储预制体的名字
 outModule.prefabName = {};
 outModule.prefabName.test = "test";
+outModule.prefabName.test_1 = "test_1";
+outModule.prefabName.test_2 = "test_2";
+outModule.prefabName.test_3 = "test_3";
 
 //这个列表中的预制体在游戏初始化的时候都会被加载起来
 //只存储prefab/UI/下的节点
 local.loadPrefabNameArr = [
-    outModule.prefabName.test
+    outModule.prefabName.test,
+    outModule.prefabName.test_1,
+    outModule.prefabName.test_2,
+    outModule.prefabName.test_3
 ];
 
 //存储预制体
@@ -31,23 +37,22 @@ local.nodeSaveObj = {};
  */
 outModule.init = (finishCb) => {
     "use strict";
-    local.loadPrefabNameArr.forEach((name) => {
-        let path = "prefab/UI/" + name;
-        //标记加载成功的数量
-        let count = 0;
-        cc.loader.loadRes(path, (err, prefab) => {
-            if (err) {
-                client.showLog(err);
-                return;
-            }
-            local.prefabSaveObj[name] = prefab;
-            count++;
-            if (count === local.loadPrefabNameArr.length) {
-                if (finishCb) {
-                    finishCb();
-                }
-            }
+    let urls = local.loadPrefabNameArr.map((str) => {
+        return "prefab/UI/" + str;
+    });
+    cc.loader.loadResArray(urls, (err, assets) => {
+        if (err) {
+            client.showLog(err);
+            return;
+        }
+        assets.forEach((prefab) => {
+            local.prefabSaveObj[prefab.name] = prefab;
         });
+        if (assets.length === local.loadPrefabNameArr.length) {
+            if (finishCb) {
+                finishCb();
+            }
+        }
     });
 };
 
