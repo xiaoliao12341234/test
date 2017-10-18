@@ -14,6 +14,10 @@ namespace Back_Project.code.Data
 
         public FileNode(string fileName)
         {
+            if (code.GlobalData.translateDic.ContainsKey(fileName))
+            {
+                fileName = code.GlobalData.translateDic[fileName].getFileNewMame();
+            }
             _fileName = fileName;
             _tableNodeList = new List<TableNode>();
         }

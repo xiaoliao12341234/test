@@ -11,17 +11,19 @@ namespace Back_Project.code.Tool.Reader
     {
         private RowNodeReader _rowNodeReader;
         private string _sheetName;
+        private string _fileName;
         private XmlElement _tableElement;
 
-        public TableNodeReader(string sheetName, XmlElement tableElement)
+        public TableNodeReader(string sheetName, XmlElement tableElement, string fileName)
         {
             _sheetName = sheetName;
             _tableElement = tableElement;
+            _fileName = fileName;
         }
 
         public Data.TableNode getTableNode()
         {
-            Data.TableNode tableNode = new Data.TableNode(_sheetName);
+            Data.TableNode tableNode = new Data.TableNode(_sheetName, _fileName);
             int count = 0;
             foreach(XmlElement rowElement in _tableElement.GetElementsByTagName("Row"))
             {

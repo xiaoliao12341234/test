@@ -1,0 +1,6 @@
+﻿<note>
+	<file oldName="测试" newName="test">
+		<table oldName="书籍" newName="book"/>
+		<table oldName="装备" newName="equipment"/>
+	</file>
+</note>

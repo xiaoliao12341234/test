@@ -21,6 +21,7 @@ client.globalData.PROJECT_NAME = "PROJECT_1";
  * @param object
  */
 client.showLog = (object) => {
+    "use strict";
     if (object === undefined) {
         cc.log(client.globalData.PROJECT_NAME + " : " + "undefined");
         return;
@@ -46,5 +47,8 @@ client.showLog = (object) => {
 client.excelDataManager = undefined;
 client.UIPoolManager = undefined;
 client.UISceneManager = undefined;
+
+//Module
+client.EventModule = undefined;
 
 window.client = client;

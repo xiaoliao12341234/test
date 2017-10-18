@@ -47,6 +47,7 @@
     <Compile Include="code\Data\FileNode.cs" />
     <Compile Include="code\Data\RowNode.cs" />
     <Compile Include="code\Data\TableNode.cs" />
+    <Compile Include="code\Data\Translate\TranslateFileData.cs" />
     <Compile Include="code\GlobalData.cs" />
     <Compile Include="code\Tool\Reader\CellNodeReader.cs" />
     <Compile Include="code\Tool\Reader\FileNodeReader.cs" />

@@ -15,8 +15,12 @@ namespace Back_Project.code.Data
         private RowNode _keyRowNode = null;
         private List<RowNode> _rowNodeList;
 
-        public TableNode(string sheetName)
+        public TableNode(string sheetName, string fileName)
         {
+            if (code.GlobalData.translateDic.ContainsKey(fileName))
+            {
+                sheetName = code.GlobalData.translateDic[fileName].getNewName(sheetName);
+            }
             _sheetName = sheetName;
             _rowNodeList = new List<RowNode>();
         }

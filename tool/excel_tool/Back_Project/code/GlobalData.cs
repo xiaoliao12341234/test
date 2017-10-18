@@ -12,5 +12,8 @@ namespace Back_Project.code
         public static int DATA_TYPE_DOUBLE = 1;
         public static int DATA_TYPE_BOOLEAN = 2;
         public static int DATA_TYPE_STRING = 3;
+
+        public static Dictionary<string, code.Data.TranslateFileData> translateDic =
+            new Dictionary<string, code.Data.TranslateFileData>();
     }
 }

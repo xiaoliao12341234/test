@@ -27,7 +27,7 @@ namespace Back_Project.code.Tool.Reader
             foreach (XmlElement tableElement in _fileElement.GetElementsByTagName("Worksheet"))
             {
                 string sheetName = tableElement.GetAttribute("ss:Name");
-                _tableNodeReader = new TableNodeReader(sheetName, tableElement);
+                _tableNodeReader = new TableNodeReader(sheetName, tableElement, _fileName);
                 fileNode.addTableNode(_tableNodeReader.getTableNode());
             }
             return fileNode;

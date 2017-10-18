@@ -5,26 +5,11 @@
  * 生成实例的node以后，将存储在这个模块中，不会销毁
  * node隐藏的话也只是把active设置为false，这样就不会渲染更新了
  * cc.instantiate是一个消耗很大的过程，所以这边选择保存node
+ * 修改了加载方式，现在是resources/prefab/UI下所有的prefab
  * @author Administrator
  */
 var outModule = {};
 var local = {};
-
-//存储预制体的名字
-outModule.prefabName = {};
-outModule.prefabName.test = "test";
-outModule.prefabName.test_1 = "test_1";
-outModule.prefabName.test_2 = "test_2";
-outModule.prefabName.test_3 = "test_3";
-
-//这个列表中的预制体在游戏初始化的时候都会被加载起来
-//只存储prefab/UI/下的节点
-local.loadPrefabNameArr = [
-    outModule.prefabName.test,
-    outModule.prefabName.test_1,
-    outModule.prefabName.test_2,
-    outModule.prefabName.test_3
-];
 
 //存储预制体
 local.prefabSaveObj = {};
@@ -37,21 +22,17 @@ local.nodeSaveObj = {};
  */
 outModule.init = (finishCb) => {
     "use strict";
-    let urls = local.loadPrefabNameArr.map((str) => {
-        return "prefab/UI/" + str;
-    });
-    cc.loader.loadResArray(urls, (err, assets) => {
+    cc.loader.loadResDir("prefab/UI", (err, assets, urls) => {
         if (err) {
             client.showLog(err);
             return;
         }
-        assets.forEach((prefab) => {
-            local.prefabSaveObj[prefab.name] = prefab;
+        assets.forEach((prefab, index) => {
+            let arr = urls[index].split("/");
+            local.prefabSaveObj[arr[arr.length - 1]] = prefab;
         });
-        if (assets.length === local.loadPrefabNameArr.length) {
-            if (finishCb) {
-                finishCb();
-            }
+        if (finishCb) {
+            finishCb();
         }
     });
 };
@@ -62,7 +43,7 @@ outModule.init = (finishCb) => {
  */
 outModule.getNode = (name) => {
     "use strict";
-    if (local.loadPrefabNameArr.indexOf(name) < 0) {
+    if (!local.prefabSaveObj[name]) {
         client.showLog("UIPoolManager : getNode name is not loaded");
         return;
     }

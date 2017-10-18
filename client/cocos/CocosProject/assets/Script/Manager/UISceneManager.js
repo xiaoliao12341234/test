@@ -17,6 +17,7 @@ local.sceneNodeSaveObj.netNodeClass = undefined;
  * 初始化
  */
 outModule.init = (mainNode) => {
+    "use strict";
     let UINode = mainNode.getChildByName("UI_node");
     let userMsgNode = mainNode.getChildByName("user_msg_node");
     let netNode = mainNode.getChildByName("net_node");
@@ -26,14 +27,17 @@ outModule.init = (mainNode) => {
 };
 
 outModule.getUINode = () => {
+    "use strict";
     return local.sceneNodeSaveObj.UINodeClass;
 };
 
 outModule.getUserMsgNode = () => {
+    "use strict";
     return local.sceneNodeSaveObj.userMsgNodeClass;
 };
 
 outModule.getnetNode = () => {
+    "use strict";
     return local.sceneNodeSaveObj.netNodeClass;
 };
 

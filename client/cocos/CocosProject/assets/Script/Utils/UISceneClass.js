@@ -22,6 +22,13 @@ class baseNode {
         this._node.addChild(node, 1, tag);
     }
 
+    addNodeWithName (name) {
+        let node = client.UIPoolManager.getNode(name);
+        if (node) {
+            this.addNode(node, name);
+        }
+    }
+
     /**
      * 在指定index的位置加入一个节点
      * 如果index位置以后都有节点的话，将会移除这些节点
@@ -48,6 +55,27 @@ class baseNode {
             }
         }
         this.addNode(node, tag);
+    }
+
+    addNodeWithNameAndIndex (name, index) {
+        if (!name) {
+            client.showLog("UISceneClass : addNodeWithIndex tag is null");
+            return;
+        }
+        let node = client.UIPoolManager.getNode(name);
+        if (!node) {
+            return;
+        }
+        //需要从头开始清理
+        //清除一个以后this._node.childrenCount就会改变了
+        //下次小心
+        if (index >= 0 && index < this._node.childrenCount) {
+            let i;
+            for (i = this._node.childrenCount - 1; i >= index; i--) {
+                this._node.removeChild(this._node.children[i], false);
+            }
+        }
+        this.addNode(node, name);
     }
 
     /**
@@ -94,14 +122,17 @@ class netNode extends baseNode {
 }
 
 outModule.buildUINode = (node) => {
+    "use strict";
     return new UINode(node);
 };
 
 outModule.buildUserMsgNode = (node) => {
+    "use strict";
     return new userMsgNode(node);
 };
 
 outModule.buildNetNode = (node) => {
+    "use strict";
     return new netNode(node);
 };
 
