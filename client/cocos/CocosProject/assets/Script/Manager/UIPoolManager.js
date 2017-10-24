@@ -98,4 +98,45 @@ outModule.destroyNode = (name) => {
     local.nodeSaveObj[name] = undefined;
 };
 
+/**
+ * 根据prefab加载场景
+ * @param url
+ * @param finishCb
+ */
+outModule.loadUIPrefab = (name, finishCb) => {
+    "use strict";
+    let url = "prefab/UI/Unusual_ui" + name;
+    cc.loader.loadRes(url, function (err, prefab) {
+        if (err) {
+            client.showLog(err);
+            return;
+        }
+        finishCb(cc.instantiate(prefab));
+    });
+};
+
+/**
+ * 销毁节点
+ * 也会销毁name及其依赖的unuaual资源
+ */
+outModule.destroyNode = (name, node) => {
+    "use strict";
+    node.destroy();
+    var depends = cc.loader.getDependsRecursively('prefab/UI/Unusual_ui/' + name);
+    depends.forEach((dep) => {
+        if (cc.loader.isAutoRelease(dep)) {
+            cc.loader.release(dep);
+        }
+    });
+};
+
+/**
+ * 判断是不是usual场景
+ * @param name
+ */
+outModule.getIsLoadPrefab = (name) => {
+    "use strict";
+    return local.prefabSaveObj[name] !== undefined;
+};
+
 module.exports = outModule;

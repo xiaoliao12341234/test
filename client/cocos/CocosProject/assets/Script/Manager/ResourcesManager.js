@@ -44,6 +44,8 @@ outModule.init = (finishCb) => {
                 assets.forEach((res, index) => {
                     let arr = urls[index].split("/");
                     local.resObj[obj.name][arr] = res;
+                    //设置为不主动释放
+                    cc.loader.setAutoRelease(res, false);
                     //这边加一个点表示文件名 + "." + 后缀
                     local.uuidSave.push(urls[index] + ".");
                 });
