@@ -2,6 +2,7 @@
 
 require("Global");
 var excelDataManager = require("ExcelDataManager");
+var ResourcesManager = require("ResourcesManager");
 var UIPoolManager = require("UIPoolManager");
 var UISceneManager = require("UISceneManager");
 var MyPromise = require("Promise");
@@ -28,12 +29,17 @@ cc.Class({
                 promise.next();
             });
         }).then(() => {
+            ResourcesManager.init(() => {
+                promise.next();
+            });
+        }).then(() => {
             UIPoolManager.init(() => {
                 promise.next();
             });
         }).then(() => {
             //初始化成功，可以进入场景
             client.excelDataManager = excelDataManager;
+            client.ResourcesManager = ResourcesManager;
             client.UIPoolManager = UIPoolManager;
             client.UISceneManager = UISceneManager;
             client.EventModule = EventModule;
@@ -58,6 +64,8 @@ cc.Class({
             client.EventModule.unRegister("test", func);
 
             client.EventModule.notify("test");
+
+            client.ResourcesManager.test();
         });
 
         promise.start();

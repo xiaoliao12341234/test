@@ -45,6 +45,7 @@ client.showLog = (object) => {
 
 //Manager
 client.excelDataManager = undefined;
+client.ResourcesManager = undefined;
 client.UIPoolManager = undefined;
 client.UISceneManager = undefined;
 

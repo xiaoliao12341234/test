@@ -6,6 +6,10 @@
  * node隐藏的话也只是把active设置为false，这样就不会渲染更新了
  * cc.instantiate是一个消耗很大的过程，所以这边选择保存node
  * 修改了加载方式，现在是resources/prefab/UI下所有的prefab
+ *
+ * 这个UI池存储的是常用的UI场景和不常用UI场景
+ * 常用UI是会存储node，hide只是把active设置为false
+ * 不常用UI不会存储任何数据，hide会销毁场景和场景特有资源
  * @author Administrator
  */
 var outModule = {};

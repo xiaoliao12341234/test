@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "test_3",
+    "_name": "test_2",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -50,7 +50,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 60,
+      "x": 100,
       "y": 0
     },
     "_skewX": 0,
@@ -92,7 +92,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "6de9e892-b1e0-45f6-ad3f-5b6ec873907d"
     },
     "fileId": "2ad12I1FixITbhLzaXOD20R",
     "sync": false

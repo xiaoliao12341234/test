@@ -22,8 +22,8 @@ outModule.init = (mainNode) => {
     let userMsgNode = mainNode.getChildByName("user_msg_node");
     let netNode = mainNode.getChildByName("net_node");
     local.sceneNodeSaveObj.UINodeClass = UISceneClass.buildUINode(UINode);
-    local.sceneNodeSaveObj.userMsgNodeClass = UISceneClass.buildUINode(userMsgNode);
-    local.sceneNodeSaveObj.netNodeClass = UISceneClass.buildUINode(netNode);
+    local.sceneNodeSaveObj.userMsgNodeClass = UISceneClass.buildUserMsgNode(userMsgNode);
+    local.sceneNodeSaveObj.netNodeClass = UISceneClass.buildNetNode(netNode);
 };
 
 outModule.getUINode = () => {
@@ -36,7 +36,7 @@ outModule.getUserMsgNode = () => {
     return local.sceneNodeSaveObj.userMsgNodeClass;
 };
 
-outModule.getnetNode = () => {
+outModule.getNetNode = () => {
     "use strict";
     return local.sceneNodeSaveObj.netNodeClass;
 };
