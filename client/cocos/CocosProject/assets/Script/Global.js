@@ -4,6 +4,7 @@
  * @author Administrator
  */
 var client = {};
+var local = {};
 
 //Excel管理模块
 client.excelManager = undefined;
@@ -41,6 +42,29 @@ client.showLog = (object) => {
     } else {
         cc.log(client.globalData.PROJECT_NAME + " : " + object);
     }
+};
+
+local.dataSave = {};
+/**
+ * 缓存数据
+ */
+client.saveData = (key, value) => {
+    "use strict";
+    local.dataSave[key] = value;
+};
+/**
+ * 获取缓存的数据
+ */
+client.getData = (key) => {
+    "use strict";
+    return local.dataSave[key];
+};
+/**
+ * 清除数据
+ */
+client.clearData = (key) => {
+    "use strict";
+    local.dataSave[key] = undefined;
 };
 
 //Manager

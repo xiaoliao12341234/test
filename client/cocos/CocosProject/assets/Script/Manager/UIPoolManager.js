@@ -105,7 +105,7 @@ outModule.destroyNode = (name) => {
  */
 outModule.loadUIPrefab = (name, finishCb) => {
     "use strict";
-    let url = "prefab/UI/Unusual_ui" + name;
+    let url = "prefab/UI/Unusual_ui/" + name;
     cc.loader.loadRes(url, function (err, prefab) {
         if (err) {
             client.showLog(err);
@@ -121,6 +121,7 @@ outModule.loadUIPrefab = (name, finishCb) => {
  */
 outModule.destroyNode = (name, node) => {
     "use strict";
+    node.removeFromParent(false);
     node.destroy();
     var depends = cc.loader.getDependsRecursively('prefab/UI/Unusual_ui/' + name);
     depends.forEach((dep) => {

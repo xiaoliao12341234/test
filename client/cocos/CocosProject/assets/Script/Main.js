@@ -37,6 +37,9 @@ cc.Class({
                 promise.next();
             });
         }).then(() => {
+            //启动碰撞
+            cc.director.getCollisionManager().enabled = true;
+            cc.director.setDisplayStats(false);
             //初始化成功，可以进入场景
             client.excelDataManager = excelDataManager;
             client.ResourcesManager = ResourcesManager;
@@ -45,6 +48,10 @@ cc.Class({
             client.EventModule = EventModule;
             //初始化
             client.UISceneManager.init(this.node);
+            //测试骑马游戏
+            client.UIPoolManager.loadUIPrefab("horse_game", (node) => {
+                client.UISceneManager.getUINode().addNode(node, "horse_game");
+            });
         });
 
         promise.start();

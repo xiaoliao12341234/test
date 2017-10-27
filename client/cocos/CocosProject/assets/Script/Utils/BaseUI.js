@@ -8,15 +8,15 @@ cc.Class({
 
     properties: {
         //name可以用于标记
-        _name : undefined
+        _name: undefined
     },
 
-    show : () => {
+    show: () => {
         "use strict";
         this.node.active = true;
     },
 
-    hide : () => {
+    hide: () => {
         "use strict";
         if (client.UIPoolManager.getIsLoadPrefab(this._name)) {
             client.UIPoolManager.hideNode(this._name);
