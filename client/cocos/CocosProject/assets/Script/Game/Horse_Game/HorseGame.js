@@ -7,7 +7,6 @@ cc.Class({
 
     properties: {
         _player: null,
-        c: null,
         /**
          * {
          *      node : cc.Node,
