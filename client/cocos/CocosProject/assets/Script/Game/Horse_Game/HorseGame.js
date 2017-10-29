@@ -62,7 +62,6 @@ cc.Class({
         this.schedule(this.createArrow, this.createTime);
         //绑定消息
         client.EventModule.register("horse_hunt_by_arrow", (function () {
-
             this._count++;
             this._label.getComponent(cc.Label).string = this._count;
         }).bind(this));

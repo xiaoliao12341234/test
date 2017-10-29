@@ -49,8 +49,18 @@ cc.Class({
             //初始化
             client.UISceneManager.init(this.node);
             //测试骑马游戏
-            client.UIPoolManager.loadUIPrefab("horse_game", (node) => {
-                client.UISceneManager.getUINode().addNode(node, "horse_game");
+            //client.UIPoolManager.loadUIPrefab("horse_game", (node) => {
+            //    client.UISceneManager.getUINode().addNode(node, "horse_game");
+            //});
+            //client.UIPoolManager.loadUIPrefab("ScrollView", (node) => {
+            //    client.UISceneManager.getUINode().addNode(node, "ScrollView");
+            //});
+            //测试page游戏
+            client.saveData("page_game", {
+                target: require("page_game_data").HORSE
+            });
+            client.UIPoolManager.loadUIPrefab("page_game", (node) => {
+                client.UISceneManager.getUINode().addNode(node, "page_game");
             });
         });
 
